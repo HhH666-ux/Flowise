@@ -45,7 +45,8 @@ class OpenAIAssistant_Agents implements INode {
         this.icon = 'assistant.svg'
         this.description = `An agent that uses OpenAI Assistant API to pick the tool and args to call`
         this.badge = 'DEPRECATING'
-        this.deprecateMessage = 'OpenAI Assistant is deprecated and will be removed in a future release. Use Custom Assistant instead.'
+        this.deprecateMessage =
+            'OpenAI Assistant is deprecated: the Assistants API it uses shuts down on August 26, 2026. Use Custom Assistant instead. Migration guide: https://platform.openai.com/docs/assistants/migration'
         this.baseClasses = [this.type]
         this.inputs = [
             {
